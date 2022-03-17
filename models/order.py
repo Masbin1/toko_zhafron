@@ -31,6 +31,12 @@ class Order(models.Model):
         string='Tanggal Pengiriman',
         default=fields.Date.today(),
         required=False)
+    pemesanan = fields.Many2one(
+        comodel_name='res.partner', 
+        string='Pemesanan', 
+        domain=[('is_customernya','=',True)])
+    
+    
 
     @api.depends('order_detail_panggung_ids', 'order_detail_kursi_tamu_ids')
     def _compute_total(self):
