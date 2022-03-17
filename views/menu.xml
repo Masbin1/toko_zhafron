@@ -17,9 +17,15 @@
         <!-- This Menu Item Must have a parent -->
         <menuitem 
             id="toko_order_menu_categ" 
-            name="Order" 
+            name="Order Bro" 
             parent="toko_menu_root" 
             sequence="20"/>
 
+        <!-- This Menu Item Must have a parent -->
+        <menuitem 
+            id="toko_partner_menu_categ" 
+            name="Partner Bro" 
+            parent="toko_menu_root" 
+            sequence="30"/>
     </data>
 </odoo>
