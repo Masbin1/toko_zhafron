@@ -33,6 +33,7 @@
         'views/order_views.xml',
         'views/pegawai_views.xml',
         'views/costumer_views.xml',
+        'views/pengembalian_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
