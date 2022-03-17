@@ -7,4 +7,3 @@ class Partner(models.Model):
 
     is_pegawainya = fields.Boolean(string='Pegawai' , default=False)
     is_costumernya = fields.Boolean(string='Costumer' , default=False)
-    
