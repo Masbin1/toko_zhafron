@@ -34,6 +34,9 @@
         'views/pegawai_views.xml',
         'views/costumer_views.xml',
         'views/pengembalian_views.xml',
+        'report/report.xml',
+        'report/order_report.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [
