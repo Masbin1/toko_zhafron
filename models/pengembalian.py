@@ -39,3 +39,8 @@ class Pengembalian(models.Model):
             self.env['toko.order'].search([('id', '=', record.name.id)]).write(
                 {'sudah_kembali': True})
             return record
+
+    def unlink(self):
+        for masbin in self:
+            self.env['toko.order'].search([('id', '=', masbin.name.id)]).write({'sudah_kembali': False})
+        record = super(Pengembalian, self).unlink()
