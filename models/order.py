@@ -37,7 +37,9 @@ class Order(models.Model):
         string='Pemesan',
         domain=[('is_customernya', '=', True)],
         required=False)
-
+    sudah_kembali = fields.Boolean(
+        string='Sudah Kembali'
+        )
     @api.depends('order_detail_panggung_ids', 'order_detail_kursi_tamu_ids')
     def _compute_total(self):
         for record in self:
