@@ -12,6 +12,7 @@
                     <field name="order_detail_panggung_ids"/>
                     <field name="order_detail_kursi_tamu_ids"/>
                     <field name="total"/>
+                    <field name="sudah_kembali"/>
                 </tree>
             </field>
         </record>
@@ -28,6 +29,7 @@
                             <field name="tanggal_pesan"/>
                             <field name="tanggal_pengiriman"/>
                             <field name="total"/>
+                            <field name="sudah_kembali"/>
                         </group>
                         <notebook>
                             <page name="panggung" string="Panggung">
