@@ -38,6 +38,8 @@ class Pengembalian(models.Model):
         if record.tanggal_pengembalian:
             self.env['toko.order'].search([('id', '=', record.name.id)]).write(
                 {'sudah_kembali': True})
+            self.env['toko.akunting'].create(
+                {'kredit' : record.tagihan, 'name':record.name})
             return record
 
     def unlink(self):
